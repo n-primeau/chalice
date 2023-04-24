@@ -52,13 +52,13 @@ def _get_random_package_name():
                     reason='Extended packaging tests only run on py3.')
 @pytest.mark.parametrize(
     'package,contents', [
-        ('pandas==1.1.5', [
+        ('pandas==1.3.5', [
             'pandas/_libs/__init__.py',
             'pandas/io/sas/_sas.cpython-*-x86_64-linux-gnu.so']),
-        ('SQLAlchemy==1.3.20', [
+        ('SQLAlchemy==1.4.47', [
             'sqlalchemy/__init__.py',
             'sqlalchemy/cresultproxy.cpython-*-x86_64-linux-gnu.so']),
-        ('numpy==1.19.4', [
+        ('numpy==1.21.6', [
             'numpy/__init__.py',
             'numpy/core/_struct_ufunc_tests.cpython-*-x86_64-linux-gnu.so']),
         ('cryptography==3.3.1', [
@@ -67,12 +67,12 @@ def _get_random_package_name():
         ('Jinja2==2.11.2', ['jinja2/__init__.py']),
         ('Mako==1.1.3', ['mako/__init__.py']),
         ('MarkupSafe==1.1.1', ['markupsafe/__init__.py']),
-        ('scipy==1.5.4', [
+        ('scipy==1.7.3', [
             'scipy/__init__.py',
             'scipy/cluster/_hierarchy.cpython-*-x86_64-linux-gnu.so']),
-        ('cffi==1.14.5', [
+        ('cffi==1.15.1', [
             '_cffi_backend.cpython-*-x86_64-linux-gnu.so']),
-        ('pygit2==1.5.0', [
+        ('pygit2==1.10.1', [
             'pygit2/_pygit2.cpython-*-x86_64-linux-gnu.so']),
         ('pyrsistent==0.17.3', [
             'pyrsistent/__init__.py']),
